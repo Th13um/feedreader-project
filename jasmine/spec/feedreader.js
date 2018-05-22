@@ -60,13 +60,26 @@ $(function() {
               expect($('body').hasClass('menu-hidden')).toBe(false);
               $('.menu-icon-link').click();
               expect($('body').hasClass('menu-hidden')).toBe(true);
-            });
+      });
     });
 
 
+    // Test suite named for Initial Entries
+    describe('Initial Entries',function () {
 
+      // Wait for asynchronous call
+      beforeEach(function (done) {
+        loadFeed(0, function () {
+          done();
+          });
+      });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+      // Test if the loadFeed function completes its work with at least a single entry
+      it('define if feed has at least a single entry', function () {
+          expect($('.feed .entry').length).not.toBeNull();
+      });
+    });
+
 
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
