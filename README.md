@@ -1,4 +1,4 @@
-#Jasmine Feed Reader Testing Project
+# Jasmine Feed Reader Testing Project
 
 This is the project n°3 of the Google Udacity Front end nano degree :Jasmine feed reader testing.
 This project uses Jasmine to test the functionality of a fictional feed reader.
