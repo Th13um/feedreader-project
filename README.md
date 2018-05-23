@@ -24,7 +24,7 @@ To view the project download or clone all the files and open` index.html`.
 **New Feed Selection:**
 * Feed content changes when new feed is selected
 
-##Sources
+## Sources
 
 ### Starter code:
 
