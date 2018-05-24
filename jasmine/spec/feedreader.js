@@ -23,7 +23,7 @@ $(function() {
      */
     it('feeds are defined', function() {
       expect(allFeeds).toBeDefined();
-      expect(allFeeds.length).not.toBeNull();
+      expect(allFeeds.length).toBeGreaterThan(0);
     });
 
 
@@ -31,7 +31,7 @@ $(function() {
     it('urls are defined', function() {
       for (var i in allFeeds) {
         expect(allFeeds[i].url).toBeDefined();
-        expect(allFeeds[i].url.length).not.toBeNull();
+        expect(allFeeds[i].url.length).toBeGreaterThan(0);
       }
     });
 
@@ -41,7 +41,7 @@ $(function() {
     it('names are defined', function() {
       for (var i in allFeeds) {
         expect(allFeeds[i].name).toBeDefined();
-        expect(allFeeds[i].name.length).not.toBeNull();
+        expect(allFeeds[i].name.length).toBeGreaterThan(0);
       }
     });
   });
@@ -76,7 +76,7 @@ $(function() {
 
     // Test if the loadFeed function finish with at least an entry.
     it('define if feed has at least a single entry', function() {
-      expect($('.entry').length).not.toBeNull();
+      expect($('.feed .entry').length).toBeGreaterThan(0);
     });
   });
 
